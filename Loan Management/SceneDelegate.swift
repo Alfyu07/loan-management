@@ -18,8 +18,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = createNavigationView()
         window?.makeKeyAndVisible()
+    }
+    
+    func createNavigationView() -> UINavigationController{
+        let loanListVC = LoanListViewController()
+        let navigationController =  UINavigationController(rootViewController: loanListVC)
+        loanListVC.title = "Daftar Pinjaman"
+        navigationController.navigationBar.prefersLargeTitles = true
+        return navigationController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
