@@ -12,6 +12,11 @@
 		A1AE13EE2C285085007761E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE13ED2C285085007761E3 /* ViewController.swift */; };
 		A1AE13F32C285087007761E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AE13F22C285087007761E3 /* Assets.xcassets */; };
 		A1AE13F62C285087007761E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AE13F42C285087007761E3 /* LaunchScreen.storyboard */; };
+		A1AE13FF2C28517D007761E3 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE13FE2C28517D007761E3 /* Loan.swift */; };
+		A1AE14012C285191007761E3 /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14002C285191007761E3 /* Borrower.swift */; };
+		A1AE14032C28519D007761E3 /* Collateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14022C28519D007761E3 /* Collateral.swift */; };
+		A1AE14052C2851AB007761E3 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14042C2851AB007761E3 /* Document.swift */; };
+		A1AE14072C2851B5007761E3 /* RepaymentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14062C2851B5007761E3 /* RepaymentSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A1AE13F22C285087007761E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1AE13F52C285087007761E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1AE13F72C285087007761E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AE13FE2C28517D007761E3 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		A1AE14002C285191007761E3 /* Borrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
+		A1AE14022C28519D007761E3 /* Collateral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collateral.swift; sourceTree = "<group>"; };
+		A1AE14042C2851AB007761E3 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		A1AE14062C2851B5007761E3 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		A1AE13E82C285085007761E3 /* Loan Management */ = {
 			isa = PBXGroup;
 			children = (
+				A1AE13FD2C285171007761E3 /* Models */,
 				A1AE13E92C285085007761E3 /* AppDelegate.swift */,
 				A1AE13EB2C285085007761E3 /* SceneDelegate.swift */,
 				A1AE13ED2C285085007761E3 /* ViewController.swift */,
@@ -62,6 +73,18 @@
 				A1AE13F72C285087007761E3 /* Info.plist */,
 			);
 			path = "Loan Management";
+			sourceTree = "<group>";
+		};
+		A1AE13FD2C285171007761E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE13FE2C28517D007761E3 /* Loan.swift */,
+				A1AE14002C285191007761E3 /* Borrower.swift */,
+				A1AE14022C28519D007761E3 /* Collateral.swift */,
+				A1AE14042C2851AB007761E3 /* Document.swift */,
+				A1AE14062C2851B5007761E3 /* RepaymentSchedule.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AE14012C285191007761E3 /* Borrower.swift in Sources */,
 				A1AE13EE2C285085007761E3 /* ViewController.swift in Sources */,
 				A1AE13EA2C285085007761E3 /* AppDelegate.swift in Sources */,
 				A1AE13EC2C285085007761E3 /* SceneDelegate.swift in Sources */,
+				A1AE14072C2851B5007761E3 /* RepaymentSchedule.swift in Sources */,
+				A1AE14032C28519D007761E3 /* Collateral.swift in Sources */,
+				A1AE14052C2851AB007761E3 /* Document.swift in Sources */,
+				A1AE13FF2C28517D007761E3 /* Loan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
