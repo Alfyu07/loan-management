@@ -19,6 +19,12 @@
 		A1AE14072C2851B5007761E3 /* RepaymentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14062C2851B5007761E3 /* RepaymentSchedule.swift */; };
 		A1AE140C2C285EB9007761E3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE140B2C285EB9007761E3 /* NetworkManager.swift */; };
 		A1AE140F2C285FFF007761E3 /* LMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE140E2C285FFF007761E3 /* LMError.swift */; };
+		A1AE14112C287D84007761E3 /* LoanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14102C287D84007761E3 /* LoanDetailViewController.swift */; };
+		A1AE14142C28AEFA007761E3 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14132C28AEFA007761E3 /* UIView+Ext.swift */; };
+		A1AE14162C28B052007761E3 /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14152C28B052007761E3 /* LoanCell.swift */; };
+		A1AE14182C28BD80007761E3 /* LMTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14172C28BD80007761E3 /* LMTitleLabel.swift */; };
+		A1AE141A2C28BDBE007761E3 /* LMBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE14192C28BDBE007761E3 /* LMBodyLabel.swift */; };
+		A1AE141C2C28BF58007761E3 /* LMCalloutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE141B2C28BF58007761E3 /* LMCalloutLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		A1AE14062C2851B5007761E3 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
 		A1AE140B2C285EB9007761E3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A1AE140E2C285FFF007761E3 /* LMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMError.swift; sourceTree = "<group>"; };
+		A1AE14102C287D84007761E3 /* LoanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailViewController.swift; sourceTree = "<group>"; };
+		A1AE14132C28AEFA007761E3 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		A1AE14152C28B052007761E3 /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
+		A1AE14172C28BD80007761E3 /* LMTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTitleLabel.swift; sourceTree = "<group>"; };
+		A1AE14192C28BDBE007761E3 /* LMBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMBodyLabel.swift; sourceTree = "<group>"; };
+		A1AE141B2C28BF58007761E3 /* LMCalloutLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMCalloutLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A1AE13ED2C285085007761E3 /* LoanListViewController.swift */,
+				A1AE14102C287D84007761E3 /* LoanDetailViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -105,6 +118,10 @@
 		A1AE14092C285DC8007761E3 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1AE14152C28B052007761E3 /* LoanCell.swift */,
+				A1AE14172C28BD80007761E3 /* LMTitleLabel.swift */,
+				A1AE14192C28BDBE007761E3 /* LMBodyLabel.swift */,
+				A1AE141B2C28BF58007761E3 /* LMCalloutLabel.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -120,9 +137,18 @@
 		A1AE140D2C285FEF007761E3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A1AE14122C28AEDC007761E3 /* Extensions */,
 				A1AE140E2C285FFF007761E3 /* LMError.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1AE14122C28AEDC007761E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE14132C28AEFA007761E3 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AE14162C28B052007761E3 /* LoanCell.swift in Sources */,
 				A1AE140C2C285EB9007761E3 /* NetworkManager.swift in Sources */,
 				A1AE14012C285191007761E3 /* Borrower.swift in Sources */,
 				A1AE13EE2C285085007761E3 /* LoanListViewController.swift in Sources */,
@@ -203,7 +230,12 @@
 				A1AE140F2C285FFF007761E3 /* LMError.swift in Sources */,
 				A1AE14072C2851B5007761E3 /* RepaymentSchedule.swift in Sources */,
 				A1AE14032C28519D007761E3 /* Collateral.swift in Sources */,
+				A1AE14142C28AEFA007761E3 /* UIView+Ext.swift in Sources */,
+				A1AE14182C28BD80007761E3 /* LMTitleLabel.swift in Sources */,
+				A1AE141A2C28BDBE007761E3 /* LMBodyLabel.swift in Sources */,
+				A1AE141C2C28BF58007761E3 /* LMCalloutLabel.swift in Sources */,
 				A1AE14052C2851AB007761E3 /* Document.swift in Sources */,
+				A1AE14112C287D84007761E3 /* LoanDetailViewController.swift in Sources */,
 				A1AE13FF2C28517D007761E3 /* Loan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
